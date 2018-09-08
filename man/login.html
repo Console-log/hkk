@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>管理</title>
+		<link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+		<script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+		<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="js/jquery.bootstrap.min.js" type="text/javascript"></script>
+		<style type="text/css">
+			html,body,.load-container{height: 100%;}
+			body{background: #ffffff;}
+			body > .load-container{height: auto; min-height: 100%;background: #fff;position: relative;}
+			.load-main{padding-bottom: 40px;}
+			.footer{position: relative;margin-top: -40px;height: 20px;line-height: 20px;clear:both;font-size: 12px;color: #7e7b7a;}
+			
+			.load-wrapper{height: 820px;background: url(img/bg2.jpg) top center no-repeat;background-size: auto 100%;padding-top: 175px;}
+			.load-logo{height: 34px;text-align: center;margin-bottom: 6px;}
+			.load-logo img{height: 100%;}
+			.load-title{height: 50px;line-height: 50px;font-size: 36px;text-align: center;font-weight: bold;margin-bottom: 40px;color: #fff;font-family: 黑体;}
+			.load-form{border-radius: 3px;background: #fff;width: 465px;margin: 0 auto;padding: 28px 40px 18px 40px;position: relative;}
+			.load-form-shbtn{position: absolute;right: 12px;top: 10px;width: 43px;height: 43px;cursor: pointer;}
+			.load-form-shbtn img{display: block;width: 100%;}
+			.load-form-tip{position: absolute;right: 56px;top: 10px;}
+			.load-form-poptip{border: 1px solid #dee9fd;padding: 4px 8px 5px 15px;background: #f2f7ff;position: relative;border-radius: 3px;}
+			.load-form-poptip-arrow{top: 8px;right: 0;position: absolute;z-index: 10;}
+			.load-form-poptip-arrow em,.load-form-poptip-arrow span{position: absolute;width: 0;height: 0;border-color: transparent;border-style: solid;overflow: hidden;top: 0;left: 0;}
+			.load-form-poptip-arrow em{top: 0;left: 1px;border-left-color: #dee9fd;border-width: 6px 0 6px 6px;}
+			.load-form-poptip-arrow span{border-left-color: #f2f7ff;border-width: 6px 0 6px 6px;}
+			.load-form-poptip .load-form-poptip-content{color: #4a4646;font-size: 12px;font-weight: 400;}
+			.load-form-container{position: relative;}
+			.load-form-wrapper{display: none;height: 258px;}
+			.load-form-wrapper.active{display: block;}
+			.load-form-wrapper-title{font-size: 18px;color: #2E2A2A;text-align: center;height: 30px;line-height: 30px;margin: 0;}
+			.load-form-content{width: 270px;margin: 0 auto;margin-top: 26px;}
+			.load-form-content-item{margin-bottom: 14px;}
+			.load-form-content-item .form-control{border-radius: 3px;}
+			.load-form-content-item .btn-success{background: #7ed321;border-color: #7ed321;width: 100%;border-radius: 3px;}
+			.load-form-qr-content{margin-top: 14px;}
+			.load-form-qr-content-img{font-size: 0;width: 161px;margin: 0 auto;margin-bottom: 10px;}
+			.load-form-qr-content-img img{width: 161px;}
+			.load-form-qr-content-msg{line-height: 18px;margin: 0;font-size: 12px;color: #2e2a2a;}
+			.load-form-qr-content-msg span{color: #f06145;}
+
+			.time-base{height: 6px;background: #cdc9c8;position: relative;}
+			.time-base-block{position: absolute;left: 50%;top: -7px;width: 18px;height: 18px;}
+			.time-base-block-main{width: 18px;height: 18px;border-radius: 18px;background: #cdc9c8;border: 4px solid #cdc9c8;cursor: pointer;}
+			.time-base-block-main:hover{border-color: #ed3b18;}
+			.time-base-block-point{position: absolute;left: 50%;top: 28px;width: 100px;margin-left: -50px;height: 18px;line-height: 18px;font-size: 14px;text-align: center;color: #7e7b7a;}
+			.time-base-block-tooltip{max-width: 222px;}
+			.time-base-block-tooltip p{text-align: left;}
+
+			.time-beard{height: 12px;background: url(img/bird_line.png) left top repeat;}
+		</style>
+	</head>
+	<body>
+		<div class="load-container">
+			<div class="load-main">
+				<div class="load-wrapper">
+					<div class="load-logo"><img src="img/bird_line.png" alt="" /></div>
+					<h3 class="load-title">早安晚安管理系统</h3>
+					<div class="load-form">
+						<div class="load-form-container">
+							<div class="load-form-wrapper active">
+								<h4 class="load-form-wrapper-title">账号密码登录</h4>
+								<form action="">
+									<div class="load-form-content">
+										<div class="load-form-content-item"><input class="form-control input-lg" type="text" placeholder="账号"></div>
+										<div class="load-form-content-item"><input class="form-control input-lg" type="text" placeholder="密码"></div>
+										<div class="load-form-content-item"><button type="button" class="btn btn-success btn-lg">登录</button></div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer text-center">少腾大神套路深啊</div>
+    		<script type="text/javascript">
+				var _p = {
+					init() {
+						this.bind();
+					},
+					bind() {
+					}
+				};
+				_p.init();
+		</script>
+	</body>
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>管理</title>
+		<link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+		<script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+		<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="js/jquery.bootstrap.min.js" type="text/javascript"></script>
+		<style type="text/css">
+			*{
+				font-size: 12px;
+			}
+			html,body{
+				height: 100%;
+			}
+			.manager-container{
+				height: 100%;
+				display: flex;
+				flex-direction: column;
+				background: #ffffff;
+			}
+			.manager-header{
+			    width: 100%;
+				height: 64px;
+			    background: rgba(53, 51, 51, 1);
+			}
+			.manager-content{
+				flex: 1;
+				width: 100%;
+				position: relative;
+			}
+			.logo{
+				float: left;
+				height: 100%;
+				padding: 6px 12px;
+			}
+			.logo img{
+				height: 100%;
+			}
+			.manager-header-menu{
+				float: right;
+				height: 100%;
+				padding-right: 12px;
+			}
+			.manager-header-menu div{
+				float: left;
+				height: 100%;
+				line-height: 64px;
+				margin-right: 12px;
+			}
+			.manager-header-menu div:last-child{
+				margin-right: 0;
+			}
+			.manager-wrapper{
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+			}
+			.manager-header-menu-user{
+				color: #fff;
+			}
+			.manager-leftnav{
+				float: left;
+				width: 120px;
+				height: 100%;
+				background: rgba(242, 239, 238, 1);
+			}
+			.manager-leftnav-item{
+				display: block;
+			    width: 100%;
+			    height: 40px;
+			    line-height: 40px;
+			    padding-left: 16px;
+				background: rgba(222, 217, 217, 1);
+    			color: #4A4646;
+			}
+			.manager-leftnav-item:hover{
+				background: rgba(230, 227, 226, 1);
+				text-decoration: none;
+			}
+			.manager-main{
+				margin-left: 120px;
+				padding: 20px;
+				height: 100%;
+				overflow-x: hidden;
+				overflow-y: auto;
+			}
+			.manager-box{
+				background: #ffffff;
+			}
+			.manager-box-tabel{
+				padding: 12px 12px 0 12px;
+			}
+			.manager-table-face{
+				width: 32px;
+				height: 32px;
+				border-radius: 32px;
+			}
+			.manager-table-face img{
+				display: block;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				border-radius: 32px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="manager-container">
+			<div class="manager-header">
+				<div class="logo"><img src="img/bird_line.png" alt=""></div>
+				<div class="manager-header-menu">
+					<div><span class="manager-header-menu-user" href="javascript:;">用户名: 少腾大神高端啊</span></div>
+					<div><a href="javascript:;">退出登录</a></div>
+				</div>
+			</div>
+			<div class="manager-content">
+				<div class="manager-wrapper">
+					<div class="manager-leftnav">
+						<a href="#" class="manager-leftnav-item">音频审核</a>
+					</div>
+					<div class="manager-main">
+						<div class="manager-box">
+							<div class="manager-box-tabel">
+								<table class="table table-bordered table-striped table-hover">
+									<thead>
+										<tr>
+											<th>序号</th>
+											<th>音频文件</th>
+											<th>用户昵称</th>
+											<th>用户头像</th>
+											<th>操作</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr data-url="/sure" data-id="10101010101" data-num="1">
+											<td>1</td>
+											<td><a target="_blank" href="audio/阿桑 - 受了点伤.mp3">试听</a></td>
+											<td>隔壁老贾</td>
+											<td>
+												<div class="manager-table-face"><img src="img/face.png" alt="" /></div>
+											</td>
+											<td>
+												<a href="javascript:;" class="j-sure">通过</a>
+												<a href="javascript:;" class="j-forgive">拒绝</a>
+											</td>
+										</tr>
+										<tr data-url="/forgive" data-id="10101010102" data-num="2">
+											<td>2</td>
+											<td><a target="_blank" href="audio/阿桑 - 叶子.mp3">试听</a></td>
+											<td>隔壁老张</td>
+											<td>
+												<div class="manager-table-face"><img src="img/face.png" alt="" /></div>
+											</td>
+											<td>
+												<a href="javascript:;" class="j-sure">通过</a>
+												<a href="javascript:;" class="j-forgive">拒绝</a>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<nav aria-label="Page navigation" class="text-center">
+								<ul class="pagination">
+									<li>
+										<a href="#" aria-label="Previous">
+											<span aria-hidden="true">&laquo;</span>
+										</a>
+									</li>
+									<li class="disabled"><a href="#">1</a></li>
+									<li class="active"><a href="#">2</a></li>
+									<li><a href="#">3</a></li>
+									<li><a href="#">4</a></li>
+									<li><a href="#">5</a></li>
+									<li>
+										<a href="#" aria-label="Next">
+											<span aria-hidden="true">&raquo;</span>
+										</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			var _p = {
+				init() {
+					this.bind();
+				},
+				bind() {
+					$('.j-sure').on('click', function() {
+						var $tr = $(this).closest('tr');
+						var url = $tr.data('url');
+						var id = $tr.data('id');
+						var num = $tr.data('num');
+						$.messager.confirm('确定', `是否确认通过序号${num}的音频文件` , function() { 
+							$.ajax({
+								url : url,
+								type: 'post',
+								data : {
+									id : id
+								},
+								dataType : 'json',
+								success : function(json){
+									$.messager.popup("操作成功！");
+									setTimeout(() => {
+										window.location.reload();
+									}, 1000);
+								}
+							});
+						});
+					});
+					$('.j-forgive').on('click', function() {
+						var $tr = $(this).closest('tr');
+						var url = $tr.data('url');
+						var id = $tr.data('id');
+						var num = $tr.data('num');
+						$.messager.confirm('拒绝', `是否拒绝序号${num}的音频文件` , function() { 
+							$.ajax({
+								url : url,
+								type: 'post',
+								data : {
+									id : id
+								},
+								dataType : 'json',
+								success : function(json){
+									$.messager.popup("操作成功！");
+									setTimeout(() => {
+										window.location.reload();
+									}, 1000);
+								}
+							});
+						});
+					});
+				}
+			};
+
+			_p.init();
+		</script>
+	</body>
+</html>
